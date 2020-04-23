@@ -1,6 +1,7 @@
 package marvint.domain;
 
 import lombok.Data;
+import lombok.ToString;
 
 import javax.persistence.*;
 import java.time.LocalDate;
@@ -22,14 +23,13 @@ public class Employee {
 
     private String photo;
 
-    @OneToMany(cascade = CascadeType.PERSIST)
-    @JoinColumn(name = "employee_login")
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "employee")
     private List<Phone> phone;
 
-    @OneToMany(cascade = CascadeType.PERSIST)
-    @JoinColumn(name = "employee_login")
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "employee")
     private List<Mail> mail;
 
-    @ManyToOne
+    @ManyToOne(optional = false)
+    @JoinColumn(name = "otdel_id")
     private Otdel otdel;
 }

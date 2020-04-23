@@ -71,4 +71,8 @@ public class EmployeeController {
         employeeService.saveEmployee(employee);
     }
 
+    public void deleteEmployeeById(String login){
+        employeeService.deleteEmployee(login);
+    }
+
 }

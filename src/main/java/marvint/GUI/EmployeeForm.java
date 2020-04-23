@@ -30,7 +30,15 @@ public class EmployeeForm {
 
     @Autowired
     private AddEmployee addEmployee;
+
+    @Autowired
+    private  EditEmployee editEmployee;
+
+    @Autowired
+    private DeleteEmployee deleteEmployee;
+
     private JPanel panel1;
+    private JTable table;
 
 
     public class EmployeeTableModel implements TableModel {
@@ -144,16 +152,6 @@ public class EmployeeForm {
         }
     }
 
-  /**  public EmployeeForm() {
-
-      buttonAdd.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                    addEmployee.initFrame();
-            }
-        });
-    } **/
-
     public JTable displayTable() {
         List<Employee> employeeList = employeeController.getEmployeeList();
         TableModel model = new EmployeeTableModel(employeeList);
@@ -173,6 +171,32 @@ public class EmployeeForm {
         });
             return buttonAdd;
     }
+    public JButton editButton(){
+        JButton buttonAdd = new JButton();
+        buttonAdd.setText("Изменить сотрудника");
+        buttonAdd.setLocation(50,550);
+        buttonAdd.setSize(100,50);
+        buttonAdd.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                editEmployee.initFrame();
+            }
+        });
+        return buttonAdd;
+    }
+    public JButton deleteButton(){
+        JButton buttonAdd = new JButton();
+        buttonAdd.setText("Удалить сотрудника");
+        buttonAdd.setLocation(50,550);
+        buttonAdd.setSize(100,50);
+        buttonAdd.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                deleteEmployee.initFrame();
+            }
+        });
+        return buttonAdd;
+    }
 
     public void initFrame() {
         JFrame frame = new JFrame();
@@ -180,32 +204,49 @@ public class EmployeeForm {
         frame.setSize(800, 800);
         frame.setLocation(500, 100);
         panel1.setLayout(new BorderLayout());
-        JTable table = displayTable();
+        table = displayTable();
         JScrollPane sp = new JScrollPane(table);
         sp.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
         sp.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
         panel1.add(sp, BorderLayout.CENTER);
         JButton buttonAdd = addButton();
-        panel1.add(buttonAdd, BorderLayout.SOUTH);
+        JButton editButton = editButton();
+        JButton deleteButton = deleteButton();
+        JPanel buttons = new JPanel(new FlowLayout(FlowLayout.CENTER));
+        buttons.add(buttonAdd);
+        buttons.add(editButton);
+        buttons.add(deleteButton);
+        panel1.add(buttons, BorderLayout.SOUTH);
         frame.getContentPane().add(panel1);
         frame.pack();
         frame.setVisible(true);
     }
 
+    public void updateEmployee() {
+        List<Employee> employeeList = employeeController.getEmployeeList();
+        TableModel model = new EmployeeTableModel(employeeList);
+        table.setModel(model);
+        table.revalidate();
+    }
+
     private String joinPhone(List<Phone> phones) {
-        String s = "";
+        StringBuilder s = new StringBuilder();
+        if (phones.size() == 0)
+            return s.toString();
         for (var phone : phones) {
-            s += phone.getPhone();
-            s += ", ";
+            s.append(phone.getPhone());
+            s.append(", ");
         }
         return s.substring(0, s.length() - 2);
     }
 
     private String joinMail(List<Mail> mails) {
-        String s = "";
+        StringBuilder s = new StringBuilder();
+        if (mails.size() == 0)
+            return s.toString();
         for (var mail : mails) {
-            s += mail.getMail();
-            s += ", ";
+            s.append(mail.getMail());
+            s.append(", ");
         }
         return s.substring(0, s.length() - 2);
     }

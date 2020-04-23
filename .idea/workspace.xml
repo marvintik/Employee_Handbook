@@ -1,7 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bb5ba547-ff9b-47e9-a56b-148b2d479fdd" name="Default Changelist" comment="" />
+    <list default="true" id="bb5ba547-ff9b-47e9-a56b-148b2d479fdd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/DeleteEmployee.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/DeleteEmployee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/EditEmployee.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/EditEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/AddEmployee.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/AddEmployee.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/AddEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/AddEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/EmployeeForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/EmployeeForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/domain/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/domain/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/domain/Mail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/domain/Mail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/domain/Otdel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/domain/Otdel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/domain/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/domain/Phone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/сontroller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/сontroller/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/AddEmployee$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/AddEmployee$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/AddEmployee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/AddEmployee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/EmployeeForm$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/EmployeeForm$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/EmployeeForm$EmployeeTableModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/EmployeeForm$EmployeeTableModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/EmployeeForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/EmployeeForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/domain/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/domain/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/domain/Mail.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/domain/Mail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/domain/Otdel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/domain/Otdel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/domain/Phone.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/domain/Phone.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/сontroller/EmployeeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/сontroller/EmployeeController.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,7 +44,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Employee" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -38,39 +64,42 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/marvint/GUI/DeleteEmployee.form" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/src/main/java/marvint/GUI/DeleteEmployee.form" />
   </component>
   <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="marvint.repository" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="marvint.domain" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Lena\IdeaProjects\PrivatBank\src\main\java\marvint\GUI" />
+      <recent name="D:\Lena\IdeaProjects\PrivatBank\src\main\webapp\WEB-INF\view" />
+      <recent name="D:\Lena\IdeaProjects\PrivatBank\src\main\resources\static\img" />
+      <recent name="D:\Lena\IdeaProjects\PrivatBank\src\main\resources\db\data" />
+      <recent name="D:\Lena\IdeaProjects\PrivatBank\src\main\webapp" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="marvint.GUI" />
+      <recent name="marvint.service" />
+      <recent name="marvint.сontroller" />
+      <recent name="marvint.domain" />
+      <recent name="marvint.repository" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Lena\IdeaProjects\PrivatBank\src\main\java\marvint\GUI" />
       <recent name="D:\Lena\IdeaProjects\PrivatBank\src\main\resources\static" />
       <recent name="D:\Lena\IdeaProjects\PrivatBank\src\main\resources\static\css" />
       <recent name="D:\Lena\IdeaProjects\PrivatBank\src\main\resources\static\123" />
       <recent name="D:\Lena\IdeaProjects\PrivatBank\src\main\webapp\WEB-INF\view" />
-    </key>
-    <key name="ExtractSuperBase.RECENT_KEYS">
-      <recent name="marvint.repository" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Lena\IdeaProjects\PrivatBank\src\main\webapp\WEB-INF\view" />
-      <recent name="D:\Lena\IdeaProjects\PrivatBank\src\main\resources\static\img" />
-      <recent name="D:\Lena\IdeaProjects\PrivatBank\src\main\resources\db\data" />
-      <recent name="D:\Lena\IdeaProjects\PrivatBank\src\main\webapp" />
-      <recent name="D:\Lena\IdeaProjects\PrivatBank\src\main\java\marvint" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="marvint.service" />
-      <recent name="marvint.сontroller" />
-      <recent name="marvint.domain" />
-      <recent name="marvint.repository" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="marvint.domain" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Application">
@@ -175,10 +204,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="524" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1583602612364" />
-    <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser" timestamp="1587569098661">
+    <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser" timestamp="1587652663817">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1587569098661" />
+    <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1587652663817" />
     <state x="498" y="196" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1585336366364">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -191,10 +220,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="507" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1583506941075" />
-    <state x="418" y="115" width="993" height="594" key="#xdebugger.evaluate" timestamp="1587502033523">
+    <state x="418" y="115" width="993" height="594" key="#xdebugger.evaluate" timestamp="1587643343273">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="418" y="115" width="993" height="594" key="#xdebugger.evaluate/0.0.1536.824@0.0.1536.824" timestamp="1587502033523" />
+    <state x="418" y="115" width="993" height="594" key="#xdebugger.evaluate/0.0.1536.824@0.0.1536.824" timestamp="1587643343273" />
     <state x="386" y="153" key="ConfigureClientPropertiesDialog" timestamp="1584214381184">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -203,42 +232,46 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1294" height="466" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1587496883713" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1584967262842">
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1587656284674">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1584967262842" />
-    <state width="1493" height="222" key="GridCell.Tab.0.bottom" timestamp="1587634399137">
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1587656284674" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1587656029170">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="222" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587634399137" />
-    <state width="1493" height="222" key="GridCell.Tab.0.center" timestamp="1587634399137">
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1587656029170" />
+    <state width="1493" height="226" key="GridCell.Tab.0.bottom" timestamp="1587656492290">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="222" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1587634399137" />
-    <state width="1493" height="222" key="GridCell.Tab.0.left" timestamp="1587634399137">
+    <state width="1493" height="226" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587656492290" />
+    <state width="1493" height="226" key="GridCell.Tab.0.center" timestamp="1587656492290">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="222" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1587634399137" />
-    <state width="1493" height="222" key="GridCell.Tab.0.right" timestamp="1587634399137">
+    <state width="1493" height="226" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1587656492290" />
+    <state width="1493" height="226" key="GridCell.Tab.0.left" timestamp="1587656492290">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="222" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1587634399137" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1587584132377">
+    <state width="1493" height="226" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1587656492290" />
+    <state width="1493" height="226" key="GridCell.Tab.0.right" timestamp="1587656492290">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587584132377" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1587584132376">
+    <state width="1493" height="226" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1587656492290" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1587643542556">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1587584132376" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1587584132376">
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587643542556" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1587643542556">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1587584132376" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1587584132376">
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1587643542556" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1587643542556">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1587584132376" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1587643542556" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1587643542556">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1587643542556" />
     <state x="277" y="54" key="SettingsEditor" timestamp="1587501050744">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -247,6 +280,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="775" height="419" key="XDebugger.FullValuePopup/0.0.1536.824@0.0.1536.824" timestamp="1583494007274" />
+    <state x="584" y="190" key="chooseDestDirectoryDialog" timestamp="1587655992733">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="584" y="190" key="chooseDestDirectoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1587655992733" />
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1587639733289">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -281,6 +318,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/marvint/repository/EmployeeRepositoryCustomImpl.java</url>
           <line>43</line>
           <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/marvint/GUI/AddEmployee.java</url>
+          <line>89</line>
+          <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

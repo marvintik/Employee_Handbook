@@ -16,7 +16,6 @@ public class Otdel {
     private String title;
     private String address;
 
-    @OneToMany(cascade = CascadeType.PERSIST)
-    @JoinColumn(name = "otdel_id")
+    @OneToMany(mappedBy = "otdel", cascade = CascadeType.PERSIST)
     private List<Employee> employees;
 }
