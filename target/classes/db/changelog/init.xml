@@ -1,0 +1,82 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext
+    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog
+    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+    <changeSet id="create tables" author="marvint" runOnChange="true">
+
+        <createTable tableName="position">
+            <column name="code" type="int8">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="title" type="varchar(50)"/>
+        </createTable>
+
+        <createTable tableName="department">
+            <column name="id" type="int8">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="title" type="varchar(50)"/>
+            <column name="address" type="varchar(500)"/>
+        </createTable>
+
+        <createTable tableName="otdel">
+            <column name="id" type="int8">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="department_id" type="int8">
+                <constraints referencedTableName="department" referencedColumnNames="id"
+                             foreignKeyName="department_id_fk" nullable="false"/>
+            </column>
+            <column name="title" type="varchar(50)"/>
+            <column name="address" type="varchar(500)"/>
+        </createTable>
+
+        <createTable tableName="employee">
+            <column name="login" type="varchar(50)">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="position_code" type="int8">
+                <constraints referencedTableName="position" referencedColumnNames="code"
+                             foreignKeyName="employee_position_fk" nullable="false"/>
+            </column>
+            <column name="otdel_id" type="int8">
+            <constraints referencedTableName="otdel" referencedColumnNames="id"
+                         foreignKeyName="otdel_id_fk" nullable="false"/>
+            </column>
+            <column name="first_name" type="varchar(50)"/>
+            <column name="last_name" type="varchar(50)"/>
+            <column name="second_name" type="varchar(50)"/>
+            <column name="date" type="date"/>
+            <column name="photo" type="varchar(500)"/>
+        </createTable>
+
+
+        <createTable tableName="mail">
+            <column name="id" type="int8">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="employee_login" type="varchar(50)">
+                <constraints referencedTableName="employee" referencedColumnNames="login"
+                             foreignKeyName="employee_mail_fk" nullable="false"/>
+            </column>
+            <column name="mail" type="varchar(50)"/>
+        </createTable>
+
+        <createTable tableName="phone">
+            <column name="id" type="int8">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="employee_login" type="varchar(50)">
+                <constraints referencedTableName="employee" referencedColumnNames="login"
+                             foreignKeyName="employee_phone_fk" nullable="false"/>
+            </column>
+            <column name="phone" type="varchar(50)"/>
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>

@@ -1,0 +1,4 @@
+login;position_code;otdel_id;first_name;last_name;second_name;date;photo
+apple;1;1;Иван;Иванов;Иванович;1960-01-01;123.jpg
+ball;4;2;Петр;Петров;Петрович;1982-02-02;123.jpg
+cat;5;3;Петр;Иванов;Иванович;1990-03-03;123.jpg

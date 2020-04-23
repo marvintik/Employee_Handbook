@@ -1,0 +1,52 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+    <changeSet id="load departments" author="marvint">
+        <loadData tableName="department" file="db/data/departments.csv" separator=";">
+        <column name="id" type="NUMERIC"/>
+        <column name="title" type="STRING"/>
+        <column name="address" type="STRING"/>
+        </loadData>
+
+        <loadData tableName="otdel" file="db/data/otdels.csv" separator=";">
+            <column name="id" type="NUMERIC"/>
+            <column name="department_id" type="NUMERIC"/>
+            <column name="title" type="STRING"/>
+            <column name="address" type="STRING"/>
+        </loadData>
+
+        <loadData tableName="position" file="db/data/positions.csv" separator=";">
+            <column name="code" type="NUMERIC"/>
+            <column name="title" type="STRING"/>
+        </loadData>
+
+        <loadData tableName="employee" file="db/data/employees.csv" separator=";">
+            <column name="login" type="STRING"/>
+            <column name="position_code" type="NUMERIC"/>
+            <column name="otdel_id" type="NUMERIC"/>
+            <column name="first_name" type="STRING"/>
+            <column name="last_name" type="STRING"/>
+            <column name="second_name" type="STRING"/>
+            <column name="date" type="date"/>
+            <column name="photo" type="STRING"/>
+        </loadData>
+
+        <loadData tableName="mail" file="db/data/mails.csv" separator=";">
+            <column name="id" type="NUMERIC"/>
+            <column name="employee_login" type="STRING"/>
+            <column name="mail" type="STRING"/>
+        </loadData>
+
+        <loadData tableName="phone" file="db/data/phones.csv" separator=";">
+            <column name="id" type="NUMERIC"/>
+            <column name="employee_login" type="STRING"/>
+            <column name="phone" type="STRING"/>
+        </loadData>
+
+
+    </changeSet>
+</databaseChangeLog>
