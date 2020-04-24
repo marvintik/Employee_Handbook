@@ -1,21 +1,13 @@
 package marvint.GUI.Department;
 
 import marvint.domain.Department;
-import marvint.domain.Otdel;
-import marvint.domain.Position;
 import marvint.сontroller.DepartmentController;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import javax.swing.*;
-import javax.swing.text.DateFormatter;
-import javax.swing.text.DefaultFormatterFactory;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.List;
 
 @Component
 public class AddDepartment {
@@ -45,8 +37,7 @@ public class AddDepartment {
                 department.setTitle(textField1.getText());
                 department.setAddress(textField2.getText());
                 departmentController.saveDepartment(department);
-                departmentForm.updeteTree(department.getTitle());
-                departmentForm.updateDepartment();
+                departmentForm.updeteDepartmnentTree(department.getTitle());
                 frame.setVisible(false);
             }
         });

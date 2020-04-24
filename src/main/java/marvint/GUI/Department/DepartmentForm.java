@@ -51,6 +51,7 @@ public class DepartmentForm {
     private JTree tree;
     private DefaultTreeModel treeModel;
     private DefaultMutableTreeNode root;
+    private DefaultMutableTreeNode departments;
 
 
     public class DepartmentTableModel implements TableModel{
@@ -208,7 +209,7 @@ public class DepartmentForm {
         buttonAdd.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-            //    addOtdel.initFrame();
+               addOtdel.initFrame();
             }
         });
         return buttonAdd;
@@ -241,28 +242,39 @@ public class DepartmentForm {
     }
 
     public JTree createJTree(){
-        String rootes = "Сптсок департаментов и подразделений";
+        String rootes = "Список департаментов и подразделений";
         root = new DefaultMutableTreeNode(rootes,true);
             List<Department> list = departmentController.getDepartmentList();
             for (int i=0; i<list.size();i++){
                 Department department = list.get(i);
-               DefaultMutableTreeNode dep = new DefaultMutableTreeNode(department.getTitle(),true);
+                departments = new DefaultMutableTreeNode(department.getTitle(),true);
                List<Otdel> otdelist = department.getOtdel();
                 for (int j=0; j<otdelist.size();j++){
                     Otdel otdel = otdelist.get(j);
                    DefaultMutableTreeNode otd = new DefaultMutableTreeNode(otdel.getTitle(),false);
-                    dep.add(otd); }
-                root.add(dep);}
+                    departments.add(otd); }
+                root.add(departments);}
             treeModel = new DefaultTreeModel(root, true);
             tree = new JTree(treeModel);
             return tree;
     }
 
-    public void updeteTree(String department) {
-        DefaultMutableTreeNode departments = new DefaultMutableTreeNode(department, true);
+    public void updeteDepartmnentTree(String department) {
+        departments = new DefaultMutableTreeNode(department, true);
         root.add(departments);
         tree.updateUI();
     }
+    public void updeteOtdelstTree(String otdel, int i) {
+        DefaultMutableTreeNode otdels = new DefaultMutableTreeNode(otdel, false);
+        departments = (DefaultMutableTreeNode)(root.getChildAt(i));
+        departments.add(otdels);
+        treeModel = (DefaultTreeModel) tree.getModel();
+        treeModel.reload();
+        tree.setModel(treeModel);
+        tree.updateUI();
+    }
+
+
 
     public void initFrame() {
         JFrame frame = new JFrame("Department");
