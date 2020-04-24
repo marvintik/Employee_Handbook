@@ -18,4 +18,8 @@ public class Otdel {
 
     @OneToMany(mappedBy = "otdel", cascade = CascadeType.PERSIST)
     private List<Employee> employees;
+
+    @ManyToOne
+    @JoinColumn( name = "department_id")
+    private Department department;
 }

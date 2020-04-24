@@ -1,6 +1,7 @@
 package marvint.GUI;
 
-import marvint.domain.Department;
+import marvint.GUI.Department.DepartmentForm;
+import marvint.GUI.Employee.EmployeeForm;
 import marvint.сontroller.EmployeeController;
 import org.springframework.beans.factory.annotation.Autowired;
 

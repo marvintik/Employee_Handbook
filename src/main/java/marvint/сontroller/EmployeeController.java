@@ -1,13 +1,10 @@
 package marvint.сontroller;
 
-import marvint.Application;
-import marvint.GUI.EmployeeForm;
 import marvint.domain.Employee;
 import marvint.domain.Filter;
 import marvint.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;

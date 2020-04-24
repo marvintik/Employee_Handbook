@@ -39,4 +39,8 @@ public class DepartmentController {
     }
 
     public List<Department> getDepartmentList() { return departmentService.listAllDepartments(); }
+
+    public void saveDepartment(Department department) {departmentService.saveDepartment(department);}
+
+    public void deleteDepartmentById(Long id) {departmentService.deleteDepartment(id);}
 }
