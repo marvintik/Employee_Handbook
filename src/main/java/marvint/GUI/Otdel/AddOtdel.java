@@ -50,7 +50,8 @@ public class AddOtdel {
                 otdel.setAddress(textField2.getText());
                 otdel.setDepartment(department);
                 otdelController.saveOtdel(otdel);
-                departmentForm.updeteOtdelstTree(otdel.getTitle(), i);
+                departmentForm.editTree();
+             //   departmentForm.updeteOtdelstTree(otdel.getTitle(), i);
                 frame.setVisible(false);
             }
         });

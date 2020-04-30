@@ -15,6 +15,6 @@ public class Department {
     private String title;
     private String address;
 
-    @OneToMany(cascade = CascadeType.PERSIST, mappedBy = "department")
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "department")
     private List<Otdel> otdel;
 }

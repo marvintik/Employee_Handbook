@@ -199,7 +199,7 @@ public class EmployeeForm {
 
     public void initFrame() {
         JFrame frame = new JFrame();
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         frame.setSize(800, 800);
         frame.setLocation(500, 100);
         panel1.setLayout(new BorderLayout());

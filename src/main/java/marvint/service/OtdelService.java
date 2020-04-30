@@ -38,7 +38,7 @@ public class OtdelService {
         return list;
     }
 
-    public void deleteDepatrment(Long id) {
+    public void deleteOtdel(Long id) {
         otdelRepository.deleteById(id);
     }
 

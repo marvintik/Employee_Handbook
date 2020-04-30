@@ -1,5 +1,6 @@
 package marvint.GUI.Department;
 
+import marvint.GUI.MainForm;
 import marvint.GUI.Otdel.AddOtdel;
 import marvint.GUI.Otdel.DeleteOtdel;
 import marvint.GUI.Otdel.EditOtdel;
@@ -45,6 +46,9 @@ public class DepartmentForm {
     @Autowired
     private DeleteOtdel deleteOtdel;
 
+    @Autowired
+    private MainForm mainForm;
+
 
     private JPanel panel1;
     private JTable table;
@@ -52,6 +56,7 @@ public class DepartmentForm {
     private DefaultTreeModel treeModel;
     private DefaultMutableTreeNode root;
     private DefaultMutableTreeNode departments;
+    private JFrame frame;
 
 
     public class DepartmentTableModel implements TableModel{
@@ -222,7 +227,7 @@ public class DepartmentForm {
         buttonEdit.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-            //    editOtdel.initFrame();
+              editOtdel.initFrame();
             }
         });
         return buttonEdit;
@@ -235,28 +240,33 @@ public class DepartmentForm {
         buttonDelete.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-              //  deleteOtdel.initFrame();
+               deleteOtdel.initFrame();
             }
         });
         return buttonDelete;
     }
 
     public JTree createJTree(){
-        String rootes = "Список департаментов и подразделений";
-        root = new DefaultMutableTreeNode(rootes,true);
-            List<Department> list = departmentController.getDepartmentList();
-            for (int i=0; i<list.size();i++){
-                Department department = list.get(i);
-                departments = new DefaultMutableTreeNode(department.getTitle(),true);
-               List<Otdel> otdelist = department.getOtdel();
-                for (int j=0; j<otdelist.size();j++){
-                    Otdel otdel = otdelist.get(j);
-                   DefaultMutableTreeNode otd = new DefaultMutableTreeNode(otdel.getTitle(),false);
-                    departments.add(otd); }
-                root.add(departments);}
-            treeModel = new DefaultTreeModel(root, true);
+            treeModel = treeModelS();
             tree = new JTree(treeModel);
             return tree;
+    }
+
+    public DefaultTreeModel treeModelS(){
+        String rootes = "Список департаментов и подразделений";
+        root = new DefaultMutableTreeNode(rootes,true);
+        List<Department> list = departmentController.getDepartmentList();
+        for (int i=0; i<list.size();i++){
+            Department department = list.get(i);
+            departments = new DefaultMutableTreeNode(department.getTitle(),true);
+            List<Otdel> otdelist = department.getOtdel();
+            for (int j=0; j<otdelist.size();j++){
+                Otdel otdel = otdelist.get(j);
+                DefaultMutableTreeNode otd = new DefaultMutableTreeNode(otdel.getTitle(),false);
+                departments.add(otd); }
+            root.add(departments);}
+        treeModel = new DefaultTreeModel(root, true);
+        return treeModel;
     }
 
     public void updeteDepartmnentTree(String department) {
@@ -265,8 +275,8 @@ public class DepartmentForm {
         tree.updateUI();
     }
     public void updeteOtdelstTree(String otdel, int i) {
-        DefaultMutableTreeNode otdels = new DefaultMutableTreeNode(otdel, false);
-        departments = (DefaultMutableTreeNode)(root.getChildAt(i));
+      DefaultMutableTreeNode otdels = new DefaultMutableTreeNode(otdel, false);
+      departments = (DefaultMutableTreeNode)(root.getChildAt(i));
         departments.add(otdels);
         treeModel = (DefaultTreeModel) tree.getModel();
         treeModel.reload();
@@ -274,11 +284,17 @@ public class DepartmentForm {
         tree.updateUI();
     }
 
+    public void editTree(){
+        treeModel = treeModelS();
+        treeModel.reload();
+        tree.setModel(treeModel);
+        tree.updateUI();
+    }
 
 
     public void initFrame() {
-        JFrame frame = new JFrame("Department");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame = new JFrame("Department");
+        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         frame.setSize(1000, 800);
         frame.setLocation(500, 100);
         panel1.setLayout(new BorderLayout());

@@ -40,7 +40,8 @@ public class DeleteDepartment {
                 department.setTitle(comboBox1.getSelectedItem().toString());
                 department.setAddress(textField2.getText());
                 departmentController.deleteDepartmentById(Long.parseLong(textField1.getText()));
-                departmentForm.updateDepartment();
+            //    departmentForm.updateDepartment();
+                departmentForm.editTree();
                 frame.setVisible(false);
             }
         });

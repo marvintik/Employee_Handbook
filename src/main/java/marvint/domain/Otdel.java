@@ -16,7 +16,7 @@ public class Otdel {
     private String title;
     private String address;
 
-    @OneToMany(mappedBy = "otdel", cascade = CascadeType.PERSIST)
+    @OneToMany(mappedBy = "otdel", cascade = CascadeType.ALL)
     private List<Employee> employees;
 
     @ManyToOne

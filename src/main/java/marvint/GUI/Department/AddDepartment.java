@@ -37,7 +37,8 @@ public class AddDepartment {
                 department.setTitle(textField1.getText());
                 department.setAddress(textField2.getText());
                 departmentController.saveDepartment(department);
-                departmentForm.updeteDepartmnentTree(department.getTitle());
+                departmentForm.editTree();
+          //      departmentForm.updeteDepartmnentTree(department.getTitle());
                 frame.setVisible(false);
             }
         });

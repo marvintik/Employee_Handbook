@@ -45,5 +45,7 @@ public class OtdelController {
         otdelService.saveOtdel(otdel);
     }
 
+    public void deleteOtdel(Long id) {otdelService.deleteOtdel(id);}
+
 
 }

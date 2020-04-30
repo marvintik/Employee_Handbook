@@ -40,10 +40,11 @@ public class EditDepartmentt {
                 department.setTitle(comboBox1.getSelectedItem().toString());
                 department.setAddress(textField2.getText());
                 departmentController.saveDepartment(department);
-                departmentForm.updateDepartment();
+               departmentForm.editTree();
                 frame.setVisible(false);
             }
         });
+
         comboBox1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -52,6 +53,7 @@ public class EditDepartmentt {
                 Department department = list.get(ibdex);
                 textField1.setText(department.getId().toString());
                 textField2.setText(department.getAddress());
+
             }
         });
     }
