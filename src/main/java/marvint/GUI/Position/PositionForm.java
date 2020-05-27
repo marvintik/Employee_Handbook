@@ -25,6 +25,12 @@ public class PositionForm {
     @Autowired
     PositionController positionController;
 
+    @Autowired
+    AddPosition addPosition;
+
+    @Autowired
+    EditPosition editPosition;
+
     private JPanel panel1;
     private JTable table;
     private DefaultTreeModel treeModel;
@@ -111,6 +117,13 @@ public class PositionForm {
         return new JTable(model);
     }
 
+    public void updateTable() {
+        List<Position> positionList = positionController.getPositionList();
+        TableModel model = new PositionTableModel(positionList);
+        table.setModel(model);
+        table.revalidate();
+    }
+
     public JButton addButton(){
         JButton buttonAdd = new JButton();
         buttonAdd.setText("Добавить позицию");
@@ -119,7 +132,7 @@ public class PositionForm {
         buttonAdd.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                //.initFrame();
+                addPosition.initFrame();
             }
         });
         return buttonAdd;
@@ -132,7 +145,7 @@ public class PositionForm {
         buttonEdit.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-               // editDepartmentt.initFrame();
+                editPosition.initFrame();
             }
         });
         return buttonEdit;

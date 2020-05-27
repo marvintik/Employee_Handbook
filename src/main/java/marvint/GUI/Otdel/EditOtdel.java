@@ -73,6 +73,12 @@ public class EditOtdel {
                 indexDep = comboBox1.getSelectedIndex();
             }
         });
+        checkBox1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                textField1.enable(true);
+            }
+        });
     }
     public void setComboBox1(){
         List<Department> list = departmentController.getDepartmentList();

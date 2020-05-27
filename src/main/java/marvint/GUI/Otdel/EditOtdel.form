@@ -57,6 +57,7 @@
           </grid>
         </constraints>
         <properties>
+          <enabled value="false"/>
           <text value="Отдел взаимопомощи"/>
         </properties>
       </component>
