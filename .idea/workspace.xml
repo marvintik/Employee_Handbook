@@ -2,200 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb5ba547-ff9b-47e9-a56b-148b2d479fdd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Department/DetailDepartment.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Department/DetailDepartment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Department/FindDepartment.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Department/FindDepartment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Employee/DetailEmployee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Employee/EmployeeTableModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Employee/FindEmployee.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Employee/FindEmployee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Otdel/DetailOtdel.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Otdel/DetailOtdel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Otdel/FindOtdel.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Otdel/FindOtdel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Position/DetailPosition.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/StatisticForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/marvint/domain/DepartmentFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/marvint/domain/OtdelFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/marvint/exceptions/EntityAlreadyExistException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/marvint/exceptions/EntityNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/marvint/repository/DepartmentRepositoryCustom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/marvint/repository/DepartmentRepositoryCustomImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/marvint/repository/OtdelRepositoryCustom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/marvint/repository/OtdelRepositoryCustomImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/marvint/utils/EmailUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/marvint/utils/PhoneUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/db.changetable.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/file.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/files.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/navbar.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/MainTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Department/AddDepartment.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Department/AddDepartment.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Department/AddDepartment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Department/AddDepartment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Department/DeleteDepartment.form" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Department/DeleteDepartment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Department/DepartmentForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Department/DepartmentForm.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Department/DepartmentForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Department/DepartmentForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Department/EditDepartmentt.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Department/EditDepartmentt.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Department/EditDepartmentt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Department/EditDepartmentt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Employee/AddEmployee.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Employee/AddEmployee.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Employee/AddEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Employee/AddEmployee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Employee/DeleteEmployee.form" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Employee/DeleteEmployee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Employee/EditEmployee.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Employee/EditEmployee.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Employee/EditEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Employee/EditEmployee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Employee/EmployeeForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Employee/EmployeeForm.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Employee/EmployeeForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Employee/EmployeeForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/MainForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/MainForm.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/MainForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/MainForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Otdel/AddOtdel.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Otdel/AddOtdel.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Otdel/AddOtdel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Otdel/AddOtdel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Otdel/DeleteOtdel.form" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Otdel/DeleteOtdel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Otdel/EditOtdel.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Otdel/EditOtdel.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Otdel/EditOtdel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Otdel/EditOtdel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/OtdelForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/StatisticForm.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/OtdelForm.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Position/AddPosition.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Position/AddPosition.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Position/AddPosition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Position/AddPosition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Position/DeletePosition.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Employee/DetailEmployee.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Position/DeletePosition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Position/DetailPosition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Position/EditPosition.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Position/EditPosition.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Position/EditPosition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Position/EditPosition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Position/PositionForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Position/PositionForm.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Position/PositionForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Position/PositionForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/domain/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/domain/Department.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/domain/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/domain/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/domain/Filter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/domain/EmployeeFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/domain/Mail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/domain/Mail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/domain/Otdel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/domain/Otdel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/domain/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/domain/Phone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/domain/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/domain/Position.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/repository/DepartmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/repository/DepartmentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/repository/EmployeeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/repository/EmployeeRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/repository/EmployeeRepositoryCustom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/repository/EmployeeRepositoryCustom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/repository/EmployeeRepositoryCustomImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/repository/EmployeeRepositoryCustomImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/repository/MailRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/repository/MailRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/repository/OtdelRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/repository/OtdelRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/repository/PhoneRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/repository/PhoneRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/service/DepartmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/service/DepartmentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/service/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/service/EmployeeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/service/MailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/service/MailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/service/OtdelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/service/OtdelService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/service/PhoneService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/service/PhoneService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/service/PositionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/service/PositionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/сontroller/DepartmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/сontroller/DepartmentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/сontroller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/сontroller/EmployeeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/сontroller/MailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/сontroller/MailController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/сontroller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/сontroller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/сontroller/OtdelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/сontroller/OtdelController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/сontroller/PhoneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/сontroller/PhoneController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/сontroller/PositionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/сontroller/PositionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/changelog/db.changelog-master.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/db.changelog-master.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/changelog/db.load-data.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/db.load-data.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/changelog/init.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/init.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/data/employees.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/data/employees.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/department.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/department.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/employee.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/employee.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/hello.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/otdel.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/otdel.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/otdelId.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/otdelId.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/position.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/position.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/search.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/search.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db/changelog/db.changelog-master.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db/changelog/db.changelog-master.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db/changelog/db.load-data.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db/changelog/db.load-data.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db/changelog/init.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db/changelog/init.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db/data/employees.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db/data/employees.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Department/AddDepartment$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Department/AddDepartment$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Department/AddDepartment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Department/AddDepartment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Department/DeleteDepartment$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Department/DeleteDepartment$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Department/DeleteDepartment.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Department/DepartmentForm$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Department/DepartmentForm$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Department/DepartmentForm$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Department/DepartmentForm$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Department/DepartmentForm$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Department/DepartmentForm$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Department/DepartmentForm$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Department/DepartmentForm$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Department/DepartmentForm$DepartmentTableModel.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Department/DepartmentForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Department/DepartmentForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Department/EditDepartmentt$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Department/EditDepartmentt$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Department/EditDepartmentt$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Department/EditDepartmentt$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Department/EditDepartmentt.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Department/EditDepartmentt.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Employee/AddEmployee$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Employee/AddEmployee$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Employee/AddEmployee$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Employee/AddEmployee$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Employee/AddEmployee$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Employee/AddEmployee$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Employee/AddEmployee$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Employee/AddEmployee$4.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Employee/AddEmployee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Employee/AddEmployee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Employee/DeleteEmployee$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Employee/DeleteEmployee$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Employee/DeleteEmployee.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Employee/EditEmployee$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Employee/EditEmployee$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Employee/EditEmployee$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Employee/EditEmployee$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Employee/EditEmployee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Employee/EditEmployee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Employee/EmployeeForm$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Employee/EmployeeForm$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Employee/EmployeeForm$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Employee/EmployeeForm$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Employee/EmployeeForm$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Employee/EmployeeForm$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Employee/EmployeeForm$EmployeeTableModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Employee/EmployeeForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Employee/EmployeeForm.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/MainForm$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/MainForm$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/MainForm$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/MainForm$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/MainForm$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/MainForm$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/MainForm$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/MainForm$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/MainForm$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/MainForm$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/MainForm$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/MainForm$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/MainForm$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/MainForm$7.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/MainForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/MainForm.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Otdel/AddOtdel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Otdel/AddOtdel$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Otdel/AddOtdel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Otdel/AddOtdel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Otdel/DeleteOtdel$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Otdel/DeleteOtdel$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Otdel/DeleteOtdel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Otdel/EditOtdel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Otdel/EditOtdel$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Otdel/EditOtdel$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Otdel/EditOtdel$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Otdel/EditOtdel$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Otdel/EditOtdel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Otdel/EditOtdel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/OtdelForm$OtdelTableModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/OtdelForm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Position/AddPosition$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Position/AddPosition$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Position/AddPosition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Position/AddPosition.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Position/DeletePosition.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Position/EditPosition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Position/EditPosition.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Position/PositionForm$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Position/PositionForm$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Position/PositionForm$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Position/PositionForm$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Position/PositionForm$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Position/PositionForm$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Position/PositionForm$PositionTableModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Position/PositionForm$PositionTableModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Position/PositionForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Position/PositionForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/domain/Department.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/domain/Department.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/domain/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/domain/Employee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/domain/Filter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/domain/Mail.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/domain/Mail.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/domain/Otdel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/domain/Otdel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/domain/Phone.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/domain/Phone.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/domain/Position.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/domain/Position.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/repository/DepartmentRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/repository/DepartmentRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/repository/EmployeeRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/repository/EmployeeRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/repository/EmployeeRepositoryCustom.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/repository/EmployeeRepositoryCustom.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/repository/EmployeeRepositoryCustomImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/repository/EmployeeRepositoryCustomImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/repository/MailRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/repository/MailRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/repository/OtdelRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/repository/OtdelRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/repository/PhoneRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/repository/PhoneRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/service/DepartmentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/service/DepartmentService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/service/EmployeeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/service/EmployeeService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/service/MailService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/service/MailService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/service/OtdelService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/service/OtdelService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/service/PhoneService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/service/PhoneService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/service/PositionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/service/PositionService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/сontroller/DepartmentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/сontroller/DepartmentController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/сontroller/EmployeeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/сontroller/EmployeeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/сontroller/MailController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/сontroller/MailController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/сontroller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/сontroller/MainController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/сontroller/OtdelController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/сontroller/OtdelController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/сontroller/PhoneController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/сontroller/PhoneController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marvint/сontroller/PositionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/сontroller/PositionController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -436,22 +264,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1593708799350" />
-    <state width="1493" height="192" key="GridCell.Tab.0.bottom" timestamp="1594312233659">
+    <state width="1493" height="192" key="GridCell.Tab.0.bottom" timestamp="1594313890456">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="192" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594312233659" />
-    <state width="1493" height="192" key="GridCell.Tab.0.center" timestamp="1594312233659">
+    <state width="1493" height="192" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594313890456" />
+    <state width="1493" height="192" key="GridCell.Tab.0.center" timestamp="1594313890456">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="192" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1594312233659" />
-    <state width="1493" height="192" key="GridCell.Tab.0.left" timestamp="1594312233659">
+    <state width="1493" height="192" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1594313890456" />
+    <state width="1493" height="192" key="GridCell.Tab.0.left" timestamp="1594313890456">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="192" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1594312233659" />
-    <state width="1493" height="192" key="GridCell.Tab.0.right" timestamp="1594312233659">
+    <state width="1493" height="192" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1594313890456" />
+    <state width="1493" height="192" key="GridCell.Tab.0.right" timestamp="1594313890456">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="192" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1594312233659" />
+    <state width="1493" height="192" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1594313890456" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1594310977164">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

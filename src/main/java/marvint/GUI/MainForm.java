@@ -48,6 +48,8 @@ public class MainForm {
 
     private JMenuBar createMenu() {
         JMenuBar menuBar = new JMenuBar();
+        Font f = new Font("sans-serif", Font.BOLD,14);
+        UIManager.put("Menu.font", f);
         JMenu mainMenu = new JMenu("Главная");
         JMenuItem exit = new JMenuItem(new ExitAction());
         JMenuItem main = new JMenuItem("Общая информация");
@@ -123,8 +125,6 @@ public class MainForm {
         menuBar.add(departmentMenu);
         menuBar.add(employeeMenu);
         menuBar.add(positMenu);
-        // TODO: 09.07.2020 FONT 
-        menuBar.setFont(new Font("Arial", Font.BOLD,20));
         return menuBar;
     }
 
@@ -141,7 +141,7 @@ public class MainForm {
     }
 
     public void init() {
-        frame = new JFrame("Hello!");
+        frame = new JFrame("Справочник сотрудников");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         pane = new JDesktopPane();
         frame.add(pane);

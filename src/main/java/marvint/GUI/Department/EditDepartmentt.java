@@ -82,7 +82,7 @@ public class EditDepartmentt {
     public void initFrame() {
         frame = new JInternalFrame("Изменить департамент", true, true, true);
         frame.setContentPane(panel1);
-        frame.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
+        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         frame.pack();
         mainForm.pane.add(frame);
         frame.setVisible(true);
