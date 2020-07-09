@@ -1,5 +1,6 @@
 package marvint.сontroller;
 
+import marvint.domain.Employee;
 import marvint.domain.Phone;
 import marvint.service.PhoneService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +17,6 @@ public class PhoneController {
 
     @Autowired
     PhoneService phoneService;
-
 
     @GetMapping("/(id}")
     public Phone getPhone(@PathVariable Long id) {
@@ -38,11 +38,10 @@ public class PhoneController {
 
     @RequestMapping(value = "/search", method = RequestMethod.GET)
     public ModelAndView filter() {
-        ModelAndView mav = new ModelAndView("search"/*, "command", new Filter()*/);
+        ModelAndView mav = new ModelAndView("search"/*, "command", new EmployeeFilter()*/);
         //System.out.println(filter());
         return mav;
     }
-    
 
 
     public List<Phone> getPhoneList() {
@@ -51,6 +50,10 @@ public class PhoneController {
 
     public void savePhone(Phone phone) {
         phoneService.savePhone(phone);
+    }
+
+    public void deletePhoneByEmployee(Employee employee) {
+        phoneService.deletePhoneByEmployee(employee);
     }
 
 }

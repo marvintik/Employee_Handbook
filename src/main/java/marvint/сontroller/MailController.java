@@ -1,17 +1,15 @@
 package marvint.сontroller;
 
+import marvint.domain.Employee;
 import marvint.domain.Mail;
-import marvint.domain.Filter;
 import marvint.service.MailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
 
-@RestController
 @Controller
 @RequestMapping("/api/v1/mails")
 public class MailController {
@@ -25,11 +23,6 @@ public class MailController {
         return mailService.getMail(id);
     }
 
-    @PostMapping
-    public Mail createMovie(@RequestBody Mail mail) {
-        return mailService.createMail(mail);
-    }
-
     @GetMapping
     public ModelAndView home() {
         List<Mail> listMail = mailService.listAll();
@@ -40,12 +33,14 @@ public class MailController {
 
     @RequestMapping(value = "/search", method = RequestMethod.GET)
     public ModelAndView filter() {
-        ModelAndView mav = new ModelAndView("search"/*, "command", new Filter()*/);
-        //System.out.println(filter());
+        ModelAndView mav = new ModelAndView("search"/*, "command", new EmployeeFilter()*/);
         return mav;
     }
 
 
+    public void deleteByEmployee(Employee employee) {
+        mailService.deleteByEmployee(employee);
+    }
 
     public List<Mail> getMailList() {
         return mailService.listAllMails();

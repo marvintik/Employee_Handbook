@@ -1,9 +1,12 @@
 package marvint.GUI.Position;
 
+import lombok.SneakyThrows;
 import marvint.GUI.Department.DepartmentForm;
+import marvint.GUI.MainForm;
 import marvint.domain.Department;
 import marvint.domain.Position;
 import marvint.сontroller.PositionController;
+import org.hibernate.engine.spi.SelfDirtinessTracker;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -15,6 +18,8 @@ import javax.swing.tree.DefaultTreeModel;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -29,14 +34,20 @@ public class PositionForm {
     AddPosition addPosition;
 
     @Autowired
+    MainForm mainForm;
+
+    @Autowired
     EditPosition editPosition;
+
+    @Autowired
+    DetailPosition detailPosition;
 
     private JPanel panel1;
     private JTable table;
     private DefaultTreeModel treeModel;
     private DefaultMutableTreeNode root;
     private DefaultMutableTreeNode departments;
-    private JFrame frame;
+    private JInternalFrame frame;
 
     public class PositionTableModel implements TableModel{
         private List<Position> positionList;
@@ -111,16 +122,20 @@ public class PositionForm {
         }
     }
 
+
     public JTable displayTable() {
         List<Position> positionList = positionController.getPositionList();
         TableModel model = new PositionTableModel(positionList);
         return new JTable(model);
     }
 
+
+
     public void updateTable() {
         List<Position> positionList = positionController.getPositionList();
         TableModel model = new PositionTableModel(positionList);
         table.setModel(model);
+        table.addMouseListener(setMouseAddaptTable());
         table.revalidate();
     }
 
@@ -158,19 +173,52 @@ public class PositionForm {
         buttonDelete.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-              //  deleteDepartment.initFrame();
-            }
+                var sel = table.getSelectedRow();
+                if (sel<0){JOptionPane.showConfirmDialog(frame, "Выберите должность для удаления", "Удалить", JOptionPane.DEFAULT_OPTION, JOptionPane.ERROR_MESSAGE);}
+                else {
+               var value = table.getValueAt(sel,0);
+                System.out.println(value);
+                var userChoose = JOptionPane.showConfirmDialog(frame, "Вы действительно хотите удалить должность?", "Удалить должность?", JOptionPane.YES_NO_OPTION, JOptionPane.WARNING_MESSAGE);
+                switch (userChoose) {
+                    case JOptionPane.YES_OPTION:
+                      positionController.deletePosition(Long.parseLong(value.toString()));
+                        break;
+                    case JOptionPane.NO_OPTION:
+                        break;
+                    case JOptionPane.CLOSED_OPTION:
+                        System.out.println("Закрыто");
+                        break;
+                    default:
+                        throw new RuntimeException("как ты сюда попал? Дверь запили");
+                }
+                displayTable();
+            }}
         });
         return buttonDelete;
     }
 
+        public MouseAdapter setMouseAddaptTable() {
+            MouseAdapter mouseAdapter= new MouseAdapter() {
+                @SneakyThrows
+                public void mouseClicked(MouseEvent e) {
+                    if (e.getClickCount() == 2) {
+                        var value = table.getValueAt(table.getSelectedRow(),0);
+                        Position position = positionController.getPositionUI(Long.parseLong(value.toString()));
+                        detailPosition.initFrame(position);
+                    }}
+            };
+                return mouseAdapter;
+        }
+
     public void initFrame() {
-        frame = new JFrame("Department");
+        frame = new JInternalFrame("Должности", true,true,true,true);
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         frame.setSize(1000, 800);
         frame.setLocation(500, 100);
+        panel1 = new JPanel();
         panel1.setLayout(new BorderLayout());
         table = displayTable();
+        table.addMouseListener(setMouseAddaptTable());
         JScrollPane sp = new JScrollPane(table);
         sp.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
         sp.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
@@ -185,6 +233,7 @@ public class PositionForm {
         panel1.add(buttons, BorderLayout.SOUTH);
         frame.getContentPane().add(panel1);
         frame.pack();
+        mainForm.pane.add(frame);
         frame.setVisible(true);
     }
 }

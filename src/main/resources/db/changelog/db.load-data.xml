@@ -28,6 +28,7 @@
             <column name="login" type="STRING"/>
             <column name="position_code" type="NUMERIC"/>
             <column name="otdel_id" type="NUMERIC"/>
+            <column name="department_id" type="NUMERIC"/>
             <column name="first_name" type="STRING"/>
             <column name="last_name" type="STRING"/>
             <column name="second_name" type="STRING"/>

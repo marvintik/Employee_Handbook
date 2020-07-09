@@ -2,16 +2,13 @@ package marvint.domain;
 
 import lombok.Data;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 @Data
 public class Position {
     @Id
-//    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(unique = true)
     private Long code;
 

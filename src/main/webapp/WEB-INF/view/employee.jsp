@@ -6,18 +6,19 @@
     <meta charset="UTF-16">
     <title>Пирвет ${name}!</title>
     <link href="/css/main.css" rel="stylesheet">
+     <jsp:include page="navbar.jsp"/>
 </head>
-                    <h3><a href="/api/v1/groups">Отделы</a></h3>
-                     <h3><a href="/api/v1/departments">Департаменты</a></h3>
-                     <h3><a href="/api/v1/positions">Должности</a></h3>
 <body>
-        <table border="1" cellpadding="8">
+          <div class="table-responsive">
+             <table class="table">
                 <tr>
                     <th>Login</th>
-                    <th>Фамилияe</th>
+                    <th>Фамилия</th>
                     <th>Имя</th>
                     <th>Отчество</th>
                     <th>Дата рождения</th>
+                    <th>Департамент</th>
+                    <th>Подразделение</th>
                     <th>Должность</th>
                     <th>Фото</th>
                     <th>Телнфон</th>
@@ -31,8 +32,10 @@
             <td>${employee.firstName}</td>
             <td>${employee.secondName}</td>
             <td>${employee.date}</td>
+            <td>${employee.department.title}</td>
+            <td>${employee.otdel.title}</td>
             <td><p>${employee.position.code},${employee.position.title}</p></td>
-            <td><img src="http://localhost:8080/${employee.photo}" width="100" height="100"/></td>
+            <td><img src="/employees/image/${employee.login}" width="100" height="100"/></td>
             <td><c:forEach items="${employee.phone}" var="phone">
                                          <p>${phone.phone}</p>
                                          </c:forEach></td>
@@ -43,5 +46,6 @@
         </tr>
         </c:forEach>
             </table>
+               </div>
 </body>
 </html>

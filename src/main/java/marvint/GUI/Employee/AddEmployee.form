@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="marvint.GUI.Employee.AddEmployee">
-  <grid id="27dc6" binding="panel1" layout-manager="GridLayoutManager" row-count="11" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-    <margin top="0" left="0" bottom="0" right="0"/>
+  <grid id="27dc6" binding="panel1" layout-manager="GridBagLayout">
     <constraints>
-      <xy x="20" y="20" width="500" height="400"/>
+      <xy x="20" y="20" width="795" height="907"/>
     </constraints>
-    <properties/>
+    <properties>
+      <opaque value="false"/>
+    </properties>
     <border type="none"/>
     <children>
       <component id="4f826" class="javax.swing.JLabel" binding="loginLabel">
         <constraints>
           <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="1.0" weighty="1.0"/>
         </constraints>
         <properties>
           <text value="Login"/>
@@ -19,54 +21,61 @@
       <component id="982cf" class="javax.swing.JLabel" binding="lastNameLabel">
         <constraints>
           <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="1.0" weighty="1.0"/>
         </constraints>
         <properties>
-          <text value="LastName"/>
+          <text value="Фамилия"/>
         </properties>
       </component>
       <component id="1187f" class="javax.swing.JLabel" binding="firstNameLabel">
         <constraints>
           <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="1.0" weighty="1.0"/>
         </constraints>
         <properties>
-          <text value="FirstName"/>
+          <text value="Имя"/>
         </properties>
       </component>
       <component id="d9e12" class="javax.swing.JLabel" binding="secondNameLabel">
         <constraints>
           <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="1.0" weighty="1.0"/>
         </constraints>
         <properties>
-          <text value="SecondName"/>
+          <text value="Отчество"/>
         </properties>
       </component>
       <component id="4c5aa" class="javax.swing.JLabel" binding="dateLabel">
         <constraints>
           <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="1.0" weighty="1.0"/>
         </constraints>
         <properties>
-          <text value="Date"/>
+          <text value="Дата рождения"/>
         </properties>
       </component>
       <component id="448af" class="javax.swing.JLabel" binding="photoLabel">
         <constraints>
           <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="1.0" weighty="1.0"/>
         </constraints>
         <properties>
-          <text value="Photo"/>
+          <text value="Фото"/>
         </properties>
       </component>
       <component id="bc580" class="javax.swing.JLabel" binding="phoneLabel">
         <constraints>
           <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="1.0" weighty="1.0"/>
         </constraints>
         <properties>
-          <text value="Phone"/>
+          <text value="Телефон"/>
         </properties>
       </component>
       <component id="a011e" class="javax.swing.JLabel" binding="eMailLabel">
         <constraints>
           <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="1.0" weighty="1.0"/>
         </constraints>
         <properties>
           <text value="E-mail"/>
@@ -77,17 +86,19 @@
           <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
+          <gridbag weightx="1.0" weighty="1.0"/>
         </constraints>
         <properties>
-          <text value="camel"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="136d5" class="javax.swing.JButton" binding="addEmployeeButton" default-binding="true">
         <constraints>
-          <grid row="10" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="12" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="1.0" weighty="1.0"/>
         </constraints>
         <properties>
-          <text value="Add Employee"/>
+          <text value="Добавить сотрудника"/>
         </properties>
       </component>
       <component id="d37ec" class="javax.swing.JTextField" binding="textField1" default-binding="true">
@@ -95,9 +106,10 @@
           <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
+          <gridbag weightx="1.0" weighty="1.0"/>
         </constraints>
         <properties>
-          <text value="Иванов"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="db133" class="javax.swing.JTextField" binding="textField2" default-binding="true">
@@ -105,9 +117,10 @@
           <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
+          <gridbag weightx="1.0" weighty="1.0"/>
         </constraints>
         <properties>
-          <text value="Иван"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="41fee" class="javax.swing.JTextField" binding="textField3" default-binding="true">
@@ -115,77 +128,123 @@
           <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
+          <gridbag weightx="1.0" weighty="1.0"/>
         </constraints>
         <properties>
-          <text value="Иванович"/>
+          <text value=""/>
         </properties>
       </component>
-      <component id="68f5e" class="javax.swing.JFormattedTextField" binding="formattedTextField2" default-binding="true">
+      <component id="f7634" class="javax.swing.JLabel" binding="image">
         <constraints>
           <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
+          <gridbag weightx="1.0" weighty="1.0"/>
         </constraints>
         <properties>
-          <text value="111"/>
+          <text value=""/>
         </properties>
       </component>
-      <component id="8323f" class="javax.swing.JTextField" binding="textField4" default-binding="true">
+      <component id="8323f" class="javax.swing.JTextField" binding="phone">
         <constraints>
           <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
+          <gridbag weightx="1.0" weighty="1.0"/>
         </constraints>
         <properties>
-          <text value="1111"/>
+          <text value=""/>
         </properties>
       </component>
-      <component id="c163e" class="javax.swing.JTextField" binding="textField5" default-binding="true">
+      <component id="c163e" class="javax.swing.JTextField" binding="mail">
         <constraints>
           <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
+          <gridbag weightx="1.0" weighty="1.0"/>
         </constraints>
         <properties>
-          <text value="camel@mail.ru"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="c559c" class="javax.swing.JLabel">
         <constraints>
           <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="1.0" weighty="1.0"/>
         </constraints>
         <properties>
-          <text value="Position"/>
+          <text value="Должность"/>
         </properties>
       </component>
-      <component id="30f6b" class="javax.swing.JComboBox" binding="comboBox1" default-binding="true">
+      <component id="30f6b" class="javax.swing.JComboBox" binding="position" default-binding="true">
         <constraints>
           <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="1.0" weighty="1.0"/>
         </constraints>
         <properties/>
       </component>
       <component id="3c7d8" class="javax.swing.JLabel" binding="otdelLabel">
         <constraints>
-          <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="11" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="1.0" weighty="1.0"/>
         </constraints>
         <properties>
           <text value="Otdel"/>
         </properties>
       </component>
-      <component id="7f0e0" class="javax.swing.JComboBox" binding="comboBox2" default-binding="true">
+      <component id="7f0e0" class="javax.swing.JComboBox" binding="otdel">
+        <constraints>
+          <grid row="11" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="1.0" weighty="1.0"/>
+        </constraints>
+        <properties>
+          <enabled value="false"/>
+        </properties>
+      </component>
+      <component id="fb33" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="1.0" weighty="1.0"/>
+        </constraints>
+        <properties>
+          <text value="Департамент"/>
+        </properties>
+      </component>
+      <component id="64002" class="javax.swing.JComboBox" binding="department">
         <constraints>
           <grid row="9" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="1.0" weighty="1.0"/>
         </constraints>
         <properties/>
       </component>
-      <component id="259eb" class="javax.swing.JFormattedTextField" binding="formattedTextField1" default-binding="true">
+      <component id="5613a" class="javax.swing.JButton" binding="button1" default-binding="true">
+        <constraints>
+          <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="1.0" weighty="1.0"/>
+        </constraints>
+        <properties>
+          <icon value="static/img/files.png"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="c2bf8" class="javax.swing.JCheckBox" binding="checkbox1">
+        <constraints>
+          <grid row="10" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="1.0" weighty="1.0"/>
+        </constraints>
+        <properties>
+          <text value="Добавить в отдел"/>
+        </properties>
+      </component>
+      <component id="82cb6" class="com.github.lgooddatepicker.components.DatePicker" binding="date">
         <constraints>
           <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
+          <gridbag weightx="1.0" weighty="1.0"/>
         </constraints>
         <properties>
-          <text value="1960-01-01"/>
+          <text value=""/>
           <verifyInputWhenFocusTarget value="true"/>
           <visible value="true"/>
         </properties>

@@ -1,5 +1,7 @@
 package marvint.GUI.Department;
 
+import lombok.SneakyThrows;
+import marvint.GUI.MainForm;
 import marvint.domain.Department;
 import marvint.сontroller.DepartmentController;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,15 +14,14 @@ import java.awt.event.ActionListener;
 @Component
 public class AddDepartment {
 
-    private JFrame frame;
+    private JInternalFrame frame;
     private JPanel panel1;
-    private JLabel idLabel;
     private JLabel titleLabel;
     private JLabel adressLabel;
     private JButton Button;
     private JTextField idText;
-    private JTextField textField1;
-    private JTextField textField2;
+    private JTextField title;
+    private JTextField adress;
 
     @Autowired
     DepartmentController departmentController;
@@ -28,29 +29,30 @@ public class AddDepartment {
     @Autowired
     DepartmentForm departmentForm;
 
+    @Autowired
+    MainForm mainForm;
+
     public AddDepartment() {
         Button.addActionListener(new ActionListener() {
+            @SneakyThrows
             @Override
             public void actionPerformed(ActionEvent e) {
                 Department department = new Department();
-                department.setId(Long.parseLong(idText.getText()));
-                department.setTitle(textField1.getText());
-                department.setAddress(textField2.getText());
-                departmentController.saveDepartment(department);
+                department.setTitle(title.getText());
+                department.setAddress(adress.getText());
+                departmentController.createDepartment(department);
                 departmentForm.editTree();
-          //      departmentForm.updeteDepartmnentTree(department.getTitle());
                 frame.setVisible(false);
             }
         });
     }
 
     public void initFrame() {
-        frame = new JFrame("AddEmployee");
+        frame = new JInternalFrame("Добавление департамента", true, true, true);
         frame.setContentPane(panel1);
         frame.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
         frame.pack();
-        frame.setSize(500, 500);
-        frame.setLocation(500, 100);
+        mainForm.pane.add(frame);
         frame.setVisible(true);
     }
 

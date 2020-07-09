@@ -1,32 +1,36 @@
 package marvint.сontroller;
 
-import marvint.domain.Employee;
-import marvint.domain.Filter;
+import lombok.SneakyThrows;
+import marvint.domain.*;
+import marvint.exceptions.EntityAlreadyExistException;
+import marvint.exceptions.EntityNotFoundException;
 import marvint.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 import java.util.List;
 
 @RestController
 @Controller
-@RequestMapping("/api/v1/employees")
+@RequestMapping("/employees")
 public class EmployeeController {
 
     @Autowired
     EmployeeService employeeService;
 
 
-    @GetMapping("/(id}")
-    public Employee getEmployee(@PathVariable String login) {
+    @GetMapping("/{id}")
+    public Employee getEmployee(@PathVariable String login) throws EntityNotFoundException {
         return employeeService.getEmployee(login);
     }
 
-    @PostMapping
-    public Employee createMovie(@RequestBody Employee employee) {
+    public Employee createEmployee(Employee employee) throws EntityAlreadyExistException {
         return employeeService.createEmployee(employee);
     }
 
@@ -40,20 +44,27 @@ public class EmployeeController {
 
     @RequestMapping(value = "/search", method = RequestMethod.GET)
     public ModelAndView filter() {
-        ModelAndView mav = new ModelAndView("search"/*, "command", new Filter()*/);
-        //System.out.println(filter());
+        ModelAndView mav = new ModelAndView("search"/*, "command", new EmployeeFilter()*/);
         return mav;
     }
 
-    @RequestMapping(value = "/search", method = RequestMethod.POST)
-    public ModelAndView search(@ModelAttribute("SpringWeb") Filter filter, ModelMap model) {
-        model.getAttribute(filter.getFirstName());
-        model.getAttribute(filter.getLastName());
-        model.getAttribute(filter.getSecondName());
-        model.getAttribute(filter.getMail());
-        model.getAttribute(filter.getPhone());
+    @RequestMapping(value = "/image/{id}", method = RequestMethod.GET)
+    public void getImage(HttpServletResponse response, @PathVariable("id") String login) throws EntityNotFoundException, IOException {
+        var employee = employeeService.getEmployee(login);
+        response.setContentType(MediaType.IMAGE_PNG_VALUE);
+        response.getOutputStream().write(employee.getImage());
+        response.setContentLength(employee.getImage().length);
+    }
 
-        List<Employee> listEmployee = employeeService.getEmployees(filter);
+    @RequestMapping(value = "/search", method = RequestMethod.POST)
+    public ModelAndView search(@ModelAttribute("SpringWeb") EmployeeFilter employeeFilter, ModelMap model) {
+        model.getAttribute(employeeFilter.getFirstName());
+        model.getAttribute(employeeFilter.getLastName());
+        model.getAttribute(employeeFilter.getSecondName());
+        model.getAttribute(employeeFilter.getMail());
+        model.getAttribute(employeeFilter.getPhone());
+
+        List<Employee> listEmployee = employeeService.getEmployees(employeeFilter);
         ModelAndView mav = new ModelAndView("search");
         mav.addObject("listEmployee", listEmployee);
         return mav;
@@ -64,12 +75,26 @@ public class EmployeeController {
         return employeeService.listAllEmployees();
     }
 
-    public void saveEmployee(Employee employee) {
-        employeeService.saveEmployee(employee);
+    public void saveEmployee(Employee employee) throws EntityNotFoundException {
+        employeeService.updateEmployee(employee);
     }
 
-    public void deleteEmployeeById(String login){
+    @SneakyThrows
+    public Employee getEmployeeByLogin(String login) {
+        return employeeService.getEmployee(login);
+    }
+
+    public void deleteEmployeeById(String login) throws EntityNotFoundException {
         employeeService.deleteEmployee(login);
     }
 
+    public List<Employee> listEmployeeByPosition(Position position) {
+        return employeeService.listEmployeeByPosition(position);
+    }
+
+    public List<Employee> listEmployeeByFilter(EmployeeFilter employeeFilter) {
+        return employeeService.getEmployees(employeeFilter);
+    }
+
+    public Long count(){return employeeService.count();}
 }

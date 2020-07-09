@@ -1,5 +1,8 @@
 package marvint.сontroller;
 
+import marvint.domain.DepartmentFilter;
+import marvint.exceptions.EntityAlreadyExistException;
+import marvint.exceptions.EntityNotFoundException;
 import marvint.service.DepartmentService;
 import marvint.domain.Department;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,22 +15,15 @@ import java.sql.SQLException;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/v1/departments")
+@RequestMapping("/departments")
 public class DepartmentController {
 
     @Autowired
     DepartmentService departmentService;
 
     @GetMapping("/(id}")
-    public Department getDepartment(@PathVariable Long id) {
+    public Department getDepartment(@PathVariable Long id) throws EntityNotFoundException {
         return departmentService.getDepartment(id);
-    }
-
-
-
-    @PostMapping
-    public Department createMovie(@RequestBody Department department) {
-        return departmentService.createDepartment(department);
     }
 
     @GetMapping
@@ -40,7 +36,18 @@ public class DepartmentController {
 
     public List<Department> getDepartmentList() { return departmentService.listAllDepartments(); }
 
+    public void createDepartment(Department department) {departmentService.createDepartment(department);}
+
     public void saveDepartment(Department department) {departmentService.saveDepartment(department);}
 
     public void deleteDepartmentById(Long id) {departmentService.deleteDepartment(id);}
+
+    public Department getDepartmentById(Long id) throws EntityNotFoundException {return departmentService.getDepartment(id);}
+
+    public Department getDepartmentByTitle(String title) {return departmentService.getByTitle(title);}
+
+    public List<Department> listDepartmentByFilter(DepartmentFilter departmentFilter){return departmentService.listDepartmentByFilter(departmentFilter);}
+
+    public Long count(){return departmentService.count();}
+
 }

@@ -2,14 +2,200 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb5ba547-ff9b-47e9-a56b-148b2d479fdd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Department/DetailDepartment.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Department/DetailDepartment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Department/FindDepartment.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Department/FindDepartment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Employee/DetailEmployee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Employee/EmployeeTableModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Employee/FindEmployee.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Employee/FindEmployee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Otdel/DetailOtdel.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Otdel/DetailOtdel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Otdel/FindOtdel.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Otdel/FindOtdel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Position/DetailPosition.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/StatisticForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/marvint/domain/DepartmentFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/marvint/domain/OtdelFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/marvint/exceptions/EntityAlreadyExistException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/marvint/exceptions/EntityNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/marvint/repository/DepartmentRepositoryCustom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/marvint/repository/DepartmentRepositoryCustomImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/marvint/repository/OtdelRepositoryCustom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/marvint/repository/OtdelRepositoryCustomImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/marvint/utils/EmailUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/marvint/utils/PhoneUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/db.changetable.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/file.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/files.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/navbar.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/MainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Department/AddDepartment.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Department/AddDepartment.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Department/AddDepartment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Department/AddDepartment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Department/DeleteDepartment.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Department/DeleteDepartment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Department/DepartmentForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Department/DepartmentForm.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Department/DepartmentForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Department/DepartmentForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Department/EditDepartmentt.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Department/EditDepartmentt.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Department/EditDepartmentt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Department/EditDepartmentt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Employee/AddEmployee.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Employee/AddEmployee.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Employee/AddEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Employee/AddEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Employee/DeleteEmployee.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Employee/DeleteEmployee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Employee/EditEmployee.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Employee/EditEmployee.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Employee/EditEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Employee/EditEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Employee/EmployeeForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Employee/EmployeeForm.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Employee/EmployeeForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Employee/EmployeeForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/MainForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/MainForm.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/MainForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/MainForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Otdel/AddOtdel.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Otdel/AddOtdel.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Otdel/AddOtdel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Otdel/AddOtdel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Otdel/DeleteOtdel.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Otdel/DeleteOtdel.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Otdel/EditOtdel.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Otdel/EditOtdel.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Otdel/EditOtdel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Otdel/EditOtdel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/OtdelForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/StatisticForm.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/OtdelForm.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Position/AddPosition.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Position/AddPosition.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Position/AddPosition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Position/AddPosition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Position/DeletePosition.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Employee/DetailEmployee.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Position/DeletePosition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Position/DetailPosition.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Position/EditPosition.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Position/EditPosition.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Position/EditPosition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Position/EditPosition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Position/PositionForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Position/PositionForm.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/marvint/GUI/Position/PositionForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/GUI/Position/PositionForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/domain/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/domain/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/domain/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/domain/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/domain/Filter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/domain/EmployeeFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/domain/Mail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/domain/Mail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/domain/Otdel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/domain/Otdel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/domain/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/domain/Phone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/domain/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/domain/Position.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/repository/DepartmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/repository/DepartmentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/repository/EmployeeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/repository/EmployeeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/repository/EmployeeRepositoryCustom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/repository/EmployeeRepositoryCustom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/repository/EmployeeRepositoryCustomImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/repository/EmployeeRepositoryCustomImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/repository/MailRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/repository/MailRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/repository/OtdelRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/repository/OtdelRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/repository/PhoneRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/repository/PhoneRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/service/DepartmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/service/DepartmentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/service/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/service/EmployeeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/service/MailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/service/MailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/service/OtdelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/service/OtdelService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/service/PhoneService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/service/PhoneService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/service/PositionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/service/PositionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/сontroller/DepartmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/сontroller/DepartmentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/сontroller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/сontroller/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/сontroller/MailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/сontroller/MailController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/сontroller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/сontroller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/сontroller/OtdelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/сontroller/OtdelController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/сontroller/PhoneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/сontroller/PhoneController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marvint/сontroller/PositionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marvint/сontroller/PositionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/changelog/db.changelog-master.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/db.changelog-master.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/changelog/db.load-data.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/db.load-data.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/changelog/init.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/init.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/data/employees.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/data/employees.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/department.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/department.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/employee.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/employee.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/hello.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/otdel.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/otdel.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/otdelId.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/otdelId.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/position.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/position.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/search.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/search.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db/changelog/db.changelog-master.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db/changelog/db.changelog-master.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db/changelog/db.load-data.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db/changelog/db.load-data.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db/changelog/init.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db/changelog/init.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db/data/employees.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db/data/employees.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Department/AddDepartment$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Department/AddDepartment$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Department/AddDepartment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Department/AddDepartment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Department/DeleteDepartment$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Department/DeleteDepartment$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Department/DeleteDepartment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Department/DepartmentForm$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Department/DepartmentForm$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Department/DepartmentForm$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Department/DepartmentForm$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Department/DepartmentForm$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Department/DepartmentForm$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Department/DepartmentForm$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Department/DepartmentForm$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Department/DepartmentForm$DepartmentTableModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Department/DepartmentForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Department/DepartmentForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Department/EditDepartmentt$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Department/EditDepartmentt$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Department/EditDepartmentt$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Department/EditDepartmentt$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Department/EditDepartmentt.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Department/EditDepartmentt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Employee/AddEmployee$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Employee/AddEmployee$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Employee/AddEmployee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Employee/AddEmployee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Employee/DeleteEmployee$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Employee/DeleteEmployee$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Employee/DeleteEmployee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Employee/EditEmployee$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Employee/EditEmployee$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Employee/EditEmployee$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Employee/EditEmployee$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Employee/EditEmployee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Employee/EditEmployee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Employee/EmployeeForm$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Employee/EmployeeForm$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Employee/EmployeeForm$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Employee/EmployeeForm$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Employee/EmployeeForm$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Employee/EmployeeForm$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Employee/EmployeeForm$EmployeeTableModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Employee/EmployeeForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Employee/EmployeeForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/MainForm$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/MainForm$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/MainForm$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/MainForm$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/MainForm$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/MainForm$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/MainForm$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/MainForm$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/MainForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/MainForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Otdel/AddOtdel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Otdel/AddOtdel$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Otdel/AddOtdel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Otdel/AddOtdel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Otdel/DeleteOtdel$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Otdel/DeleteOtdel$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Otdel/DeleteOtdel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Otdel/EditOtdel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Otdel/EditOtdel$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Otdel/EditOtdel$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Otdel/EditOtdel$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Otdel/EditOtdel$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Otdel/EditOtdel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Otdel/EditOtdel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/OtdelForm$OtdelTableModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/OtdelForm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Position/AddPosition$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Position/AddPosition$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Position/AddPosition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Position/AddPosition.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Position/DeletePosition.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Position/EditPosition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Position/EditPosition.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Position/PositionForm$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Position/PositionForm$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Position/PositionForm$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Position/PositionForm$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Position/PositionForm$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Position/PositionForm$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Position/PositionForm$PositionTableModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Position/PositionForm$PositionTableModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/GUI/Position/PositionForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/GUI/Position/PositionForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/domain/Department.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/domain/Department.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/domain/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/domain/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/domain/Filter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/domain/Mail.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/domain/Mail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/domain/Otdel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/domain/Otdel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/domain/Phone.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/domain/Phone.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/domain/Position.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/domain/Position.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/repository/DepartmentRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/repository/DepartmentRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/repository/EmployeeRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/repository/EmployeeRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/repository/EmployeeRepositoryCustom.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/repository/EmployeeRepositoryCustom.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/repository/EmployeeRepositoryCustomImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/repository/EmployeeRepositoryCustomImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/repository/MailRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/repository/MailRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/repository/OtdelRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/repository/OtdelRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/repository/PhoneRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/repository/PhoneRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/service/DepartmentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/service/DepartmentService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/service/EmployeeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/service/EmployeeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/service/MailService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/service/MailService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/service/OtdelService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/service/OtdelService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/service/PhoneService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/service/PhoneService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/service/PositionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/service/PositionService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/сontroller/DepartmentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/сontroller/DepartmentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/сontroller/EmployeeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/сontroller/EmployeeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/сontroller/MailController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/сontroller/MailController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/сontroller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/сontroller/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/сontroller/OtdelController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/сontroller/OtdelController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/сontroller/PhoneController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/сontroller/PhoneController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marvint/сontroller/PositionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marvint/сontroller/PositionController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,24 +224,29 @@
     </option>
   </component>
   <component name="ProjectId" id="1YfnuLyB8rR3BTxkGorlIX9GLDW" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/marvint/GUI/Position/EditPosition.form" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/marvint/repository" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/src/main/java/marvint/GUI/Position/EditPosition.form" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/src/main/java/marvint/GUI/Employee/EditEmployee.form" />
   </component>
   <component name="RecentsManager">
     <key name="ExtractSuperBase.RECENT_KEYS">
@@ -65,18 +256,18 @@
       <recent name="marvint.domain" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Lena\IdeaProjects\PrivatBank\src\main\java\marvint\repository" />
+      <recent name="D:\Lena\IdeaProjects\PrivatBank\src\main\resources\db\changelog" />
       <recent name="D:\Lena\IdeaProjects\PrivatBank\src\main\java\marvint\GUI" />
       <recent name="D:\Lena\IdeaProjects\PrivatBank\src\main\webapp\WEB-INF\view" />
       <recent name="D:\Lena\IdeaProjects\PrivatBank\src\main\resources\static\img" />
-      <recent name="D:\Lena\IdeaProjects\PrivatBank\src\main\resources\db\data" />
-      <recent name="D:\Lena\IdeaProjects\PrivatBank\src\main\webapp" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="marvint.GUI" />
-      <recent name="marvint.service" />
-      <recent name="marvint.сontroller" />
       <recent name="marvint.domain" />
       <recent name="marvint.repository" />
+      <recent name="marvint.GUI.Employee" />
+      <recent name="marvint.exceptions" />
+      <recent name="marvint.GUI" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Lena\IdeaProjects\PrivatBank\src\main\java\marvint\GUI\Department" />
@@ -133,17 +324,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="listEmployee-1.0-SNAPSHOT.jar" type="JarApplication" temporary="true">
-      <option name="JAR_PATH" value="$PROJECT_DIR$/target/listEmployee-1.0-SNAPSHOT.jar" />
-      <method v="2" />
+    <configuration name="MainTest.getImg" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="listEmployees" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MainTest" />
+      <option name="METHOD_NAME" value="getImg" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Application" />
+        <item itemvalue="JUnit.MainTest.getImg" />
         <item itemvalue="Application.EmployeeForm" />
         <item itemvalue="Application.MainForm (1)" />
         <item itemvalue="Application.MainForm" />
-        <item itemvalue="JAR Application.listEmployee-1.0-SNAPSHOT.jar" />
       </list>
     </recent_temporary>
   </component>
@@ -175,141 +372,156 @@
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.jsp" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="361" y="70" key="#Project_Structure" timestamp="1583349607196">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="361" y="70" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1583349607196" />
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587728701076">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1587728701076" />
-    <state x="524" y="215" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583602612364">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="524" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1583602612364" />
     <state x="517" y="249" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1587727187744">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="517" y="249" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1536.824@0.0.1536.824" timestamp="1587727187744" />
-    <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser" timestamp="1588336052468">
+    <state x="578" y="117" key="#com.intellij.ide.util.MemberChooser" timestamp="1594233199237">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1588336052468" />
-    <state x="498" y="196" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1585336366364">
+    <state x="578" y="117" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1594233199237" />
+    <state x="499" y="188" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1593025361244">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="498" y="196" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1585336366364" />
+    <state x="499" y="188" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1593025361244" />
+    <state x="498" y="196" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1593111651808">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="498" y="196" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1593111651808" />
+    <state x="498" y="202" key="#com.intellij.ide.util.TreeFileChooserDialog" timestamp="1593099420928">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="498" y="202" key="#com.intellij.ide.util.TreeFileChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1593099420928" />
     <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1587227096786">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1587227096786" />
-    <state x="507" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1583506941075">
+    <state x="248" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1594231149490">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="507" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1583506941075" />
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1587756069001">
+    <state x="248" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1594231149490" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1594229492183">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1587756069001" />
-    <state x="418" y="115" width="993" height="594" key="#xdebugger.evaluate" timestamp="1587643343273">
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1594229492183" />
+    <state x="551" y="200" key="#com.intellij.uiDesigner.palette.ComponentItemDialog" timestamp="1593111653509">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="418" y="115" width="993" height="594" key="#xdebugger.evaluate/0.0.1536.824@0.0.1536.824" timestamp="1587643343273" />
-    <state x="386" y="153" key="ConfigureClientPropertiesDialog" timestamp="1584214381184">
+    <state x="551" y="200" key="#com.intellij.uiDesigner.palette.ComponentItemDialog/0.0.1536.824@0.0.1536.824" timestamp="1593111653509" />
+    <state x="418" y="115" width="993" height="594" key="#xdebugger.evaluate" timestamp="1594202102505">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="386" y="153" key="ConfigureClientPropertiesDialog/0.0.1536.824@0.0.1536.824" timestamp="1584214381184" />
-    <state width="1294" height="466" key="DebuggerActiveHint" timestamp="1587496883713">
+    <state x="418" y="115" width="993" height="594" key="#xdebugger.evaluate/0.0.1536.824@0.0.1536.824" timestamp="1594202102505" />
+    <state x="516" y="259" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1592998172837">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1294" height="466" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1587496883713" />
-    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1588335792181">
+    <state x="516" y="259" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1592998172837" />
+    <state width="1294" height="466" key="DebuggerActiveHint" timestamp="1594202162737">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1588335792181" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1588335723614">
+    <state width="1294" height="466" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1594202162737" />
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1593713413109">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1588335723614" />
-    <state width="1493" height="226" key="GridCell.Tab.0.bottom" timestamp="1588336983790">
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1593713413109" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1593708799350">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="226" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1588336983790" />
-    <state width="1493" height="226" key="GridCell.Tab.0.center" timestamp="1588336983790">
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1593708799350" />
+    <state width="1493" height="192" key="GridCell.Tab.0.bottom" timestamp="1594312233659">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="226" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1588336983790" />
-    <state width="1493" height="226" key="GridCell.Tab.0.left" timestamp="1588336983790">
+    <state width="1493" height="192" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594312233659" />
+    <state width="1493" height="192" key="GridCell.Tab.0.center" timestamp="1594312233659">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="226" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1588336983790" />
-    <state width="1493" height="226" key="GridCell.Tab.0.right" timestamp="1588336983790">
+    <state width="1493" height="192" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1594312233659" />
+    <state width="1493" height="192" key="GridCell.Tab.0.left" timestamp="1594312233659">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="226" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1588336983790" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1588335190934">
+    <state width="1493" height="192" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1594312233659" />
+    <state width="1493" height="192" key="GridCell.Tab.0.right" timestamp="1594312233659">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1588335190934" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1588335190934">
+    <state width="1493" height="192" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1594312233659" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1594310977164">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1588335190934" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1588335190934">
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594310977164" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1594310977164">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1588335190934" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1588335190934">
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1594310977164" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1594310977164">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1588335190934" />
-    <state x="277" y="54" key="SettingsEditor" timestamp="1587728833887">
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1594310977164" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1594310977164">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="277" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1587728833887" />
-    <state width="775" height="419" key="XDebugger.FullValuePopup" timestamp="1583494007274">
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1594310977164" />
+    <state x="277" y="54" key="SettingsEditor" timestamp="1592937202452">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="775" height="419" key="XDebugger.FullValuePopup/0.0.1536.824@0.0.1536.824" timestamp="1583494007274" />
+    <state x="277" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1592937202452" />
     <state x="584" y="190" key="chooseDestDirectoryDialog" timestamp="1587655992733">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="584" y="190" key="chooseDestDirectoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1587655992733" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1588333951548">
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1594309886900">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1588333951548" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1594309886900" />
+    <state x="410" y="27" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1592941543068">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="410" y="27" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1592941543068" />
+    <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594232396196">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1594232396196" />
+    <state x="910" y="164" key="extract.method.dialog" timestamp="1594236020712">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="910" y="164" key="extract.method.dialog/0.0.1536.824@0.0.1536.824" timestamp="1594236020712" />
     <state x="475" y="40" key="refactoring.ChangeSignatureDialog" timestamp="1587740430340">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="475" y="40" key="refactoring.ChangeSignatureDialog/0.0.1536.824@0.0.1536.824" timestamp="1587740430340" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1587495913728">
+    <state x="425" y="187" key="run.anything.popup" timestamp="1594310686196">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1587495913728" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1587668885729">
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1594310686196" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1594312204394">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1587668885729" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1594312204394" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/marvint/repository/EmployeeRepositoryCustomImpl.java</url>
-          <line>63</line>
-          <option name="timeStamp" value="20" />
+          <url>file://$PROJECT_DIR$/src/main/java/marvint/GUI/Employee/EmployeeForm.java</url>
+          <line>91</line>
+          <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/marvint/repository/EmployeeRepositoryCustomImpl.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/marvint/GUI/Position/EditPosition.java</url>
           <line>59</line>
-          <option name="timeStamp" value="21" />
+          <option name="timeStamp" value="69" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/marvint/repository/EmployeeRepositoryCustomImpl.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="22" />
+          <url>file://$PROJECT_DIR$/src/main/java/marvint/GUI/Position/EditPosition.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="70" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,6 +1,7 @@
 package marvint.GUI.Otdel;
 
 import marvint.GUI.Department.DepartmentForm;
+import marvint.GUI.MainForm;
 import marvint.domain.Department;
 import marvint.domain.Otdel;
 import marvint.сontroller.DepartmentController;
@@ -19,18 +20,19 @@ import static org.hibernate.criterion.Restrictions.or;
 @Component
 public class EditOtdel {
 
-    private JFrame frame;
+    private JInternalFrame frame;
     private JPanel panel1;
     private JLabel idLabel;
     private JLabel titleLabel;
     private JLabel adressLabel;
-    private JButton Button;
+    private JButton editButton;
     private JTextField idText;
     private JTextField textField1;
     private JTextField textField2;
     private JComboBox comboBox1;
     private JComboBox comboBox2;
     private JCheckBox checkBox1;
+    private JButton findButton;
     private int indexDep;
 
     @Autowired
@@ -42,17 +44,18 @@ public class EditOtdel {
     @Autowired
     DepartmentForm departmentForm;
 
+    @Autowired
+    MainForm mainForm;
+
     public EditOtdel() {
-        Button.addActionListener(new ActionListener() {
+        editButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 List<Department> list = departmentController.getDepartmentList();
                 int i= comboBox1.getSelectedIndex();
                 Department department = list.get(i);
-                Otdel otdel = new Otdel();
-                otdel.setId(Long.parseLong(idText.getText()));
-               if (checkBox1.isSelected()== true) { otdel.setTitle(textField1.getText()); }
-               else otdel.setTitle(comboBox2.getSelectedItem().toString());
+                Otdel otdel = otdelController.getOtdelById(Long.parseLong(idText.getText()));
+                otdel.setTitle(textField1.getText());
                 otdel.setAddress(textField2.getText());
                 otdel.setDepartment(department);
                 otdelController.saveOtdel(otdel);
@@ -60,23 +63,15 @@ public class EditOtdel {
                 frame.setVisible(false);
             }
         });
-        comboBox2.addActionListener(new ActionListener() {
+
+        findButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                List<Otdel> list = otdelController.getOtdelList();
-                int ibdex = comboBox2.getSelectedIndex();
-                Otdel otdel = list.get(ibdex);
-                idText.setText(otdel.getId().toString());
+                Otdel otdel = otdelController.getOtdelById(Long.parseLong(idText.getText()));
                 textField1.setText(otdel.getTitle());
                 textField2.setText(otdel.getAddress());
                 comboBox1.setSelectedItem(otdel.getDepartment().getTitle());
                 indexDep = comboBox1.getSelectedIndex();
-            }
-        });
-        checkBox1.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                textField1.enable(true);
             }
         });
     }
@@ -90,25 +85,32 @@ public class EditOtdel {
         comboBox1.setModel(new DefaultComboBoxModel(titles.toArray()));
     }
 
-    public void setComboBox2(){
-        List<Otdel> list = otdelController.getOtdelList();
-        List<String> titles = new ArrayList<>();
-        for (int i=0; i<list.size();i++) {
-            Otdel otdel = list.get(i);
-            titles.add(otdel.getTitle());
-        }
-        comboBox2.setModel(new DefaultComboBoxModel(titles.toArray()));
+    public void setLabels(Otdel otdel){
+        idText.setText(otdel.getId().toString());
+        textField1.setText(otdel.getTitle());
+        textField2.setText(otdel.getAddress());
+        setComboBox1();
+        comboBox1.setSelectedItem(otdel.getDepartment().getTitle());
+        indexDep = comboBox1.getSelectedIndex();
+        idText.setEnabled(false);
+        findButton.setVisible(false);
+    }
+
+    public void defaultEdit(){
+        idText.setText("");
+        textField1.setText("");
+        textField2.setText("");
+        setComboBox1();
+        idText.setEnabled(true);
+        findButton.setVisible(true);
     }
 
     public void initFrame() {
-        frame = new JFrame("AddEmployee");
+        frame = new JInternalFrame("Изменить отдел", true,true,true);
         frame.setContentPane(panel1);
-        frame.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
-        setComboBox1();
-        setComboBox2();
+        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         frame.pack();
-        frame.setSize(500, 500);
-        frame.setLocation(500, 100);
+        mainForm.pane.add(frame);
         frame.setVisible(true);
     }
 }

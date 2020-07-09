@@ -1,6 +1,7 @@
 package marvint.GUI.Otdel;
 
 import marvint.GUI.Department.DepartmentForm;
+import marvint.GUI.MainForm;
 import marvint.domain.Department;
 import marvint.domain.Otdel;
 import marvint.сontroller.DepartmentController;
@@ -17,9 +18,8 @@ import java.util.List;
 @Component
 public class AddOtdel {
 
-    private JFrame frame;
+    private JInternalFrame frame;
     private JPanel panel1;
-    private JLabel idLabel;
     private JLabel titleLabel;
     private JLabel adressLabel;
     private JButton Button;
@@ -37,6 +37,9 @@ public class AddOtdel {
     @Autowired
     DepartmentForm departmentForm;
 
+    @Autowired
+    MainForm mainForm;
+
     public AddOtdel() {
         Button.addActionListener(new ActionListener() {
             @Override
@@ -44,15 +47,16 @@ public class AddOtdel {
                 List<Department> list = departmentController.getDepartmentList();
                 int i= comboBox1.getSelectedIndex();
                 Department department = list.get(i);
+              if (otdelController.getOtdelByTitleAndDepantment(textField1.getText(), department)!=null) {
+                  JOptionPane.showConfirmDialog(frame, "Такой отдел уже сузествует в Департаменте", "Ошибка", JOptionPane.DEFAULT_OPTION, JOptionPane.ERROR_MESSAGE);
+              } else {
                 Otdel otdel = new Otdel();
-                otdel.setId(Long.parseLong(idText.getText()));
                 otdel.setTitle(textField1.getText());
                 otdel.setAddress(textField2.getText());
                 otdel.setDepartment(department);
                 otdelController.saveOtdel(otdel);
                 departmentForm.editTree();
-             //   departmentForm.updeteOtdelstTree(otdel.getTitle(), i);
-                frame.setVisible(false);
+                frame.setVisible(false);}
             }
         });
     }
@@ -67,13 +71,12 @@ public class AddOtdel {
       }
 
     public void initFrame() {
-        frame = new JFrame("AddEmployee");
+        frame = new JInternalFrame("Добавить отдел", true,true,true);
         frame.setContentPane(panel1);
         frame.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
         setComboBox1();
         frame.pack();
-        frame.setSize(500, 500);
-        frame.setLocation(500, 100);
+        mainForm.pane.add(frame);
         frame.setVisible(true);
     }
 }

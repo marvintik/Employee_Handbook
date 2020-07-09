@@ -1,5 +1,6 @@
 package marvint;
 
+import lombok.SneakyThrows;
 import marvint.GUI.MainForm;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,19 +10,26 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
+import javax.swing.*;
+import javax.swing.plaf.nimbus.NimbusLookAndFeel;
+
 @Configuration
 @EnableAutoConfiguration
 @SpringBootApplication
 @ComponentScan
 public class Application {
 
+    @SneakyThrows
     public static void main(String[] args) {
-    //    var c = SpringApplication.run(Application.class, args);
         ConfigurableApplicationContext context = new SpringApplicationBuilder(Application.class).headless(false).run(args);
+        initUI(context);
+    }
+
+    private static void initUI(ConfigurableApplicationContext context) throws UnsupportedLookAndFeelException {
         MainForm form = context.getBean(MainForm.class);
-    //    EmployeeForm employeeForm = context.getBean(EmployeeForm.class);
+        JFrame.setDefaultLookAndFeelDecorated(true);
+        UIManager.setLookAndFeel(new NimbusLookAndFeel());
         form.init();
-  //      employeeForm.initFrame();
     }
 
     @Bean
@@ -30,15 +38,3 @@ public class Application {
     }
 
 }
-
-//    try {
-//         ConfigurableApplicationContext context = new SpringApplicationBuilder(Application.class).headless(false).run(args);
-
-//         EmployeeController controller = context.getBean(EmployeeController.class);
-//        MainForm form = new MainForm(controller);
-//      DepartmentController departmentController = context.getBean(DepartmentController.class);
-//      form.init();
-//    } catch (Throwable e) {
-//         System.out.println(e);
-//     }
-// }

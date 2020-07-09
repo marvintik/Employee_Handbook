@@ -1,7 +1,6 @@
 package marvint.service;
 
-import marvint.domain.Employee;
-import marvint.domain.Otdel;
+import marvint.domain.*;
 import marvint.domain.Otdel;
 import marvint.repository.OtdelRepository;
 import org.hibernate.Hibernate;
@@ -10,6 +9,7 @@ import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 @Service
@@ -20,9 +20,9 @@ public class OtdelService {
     OtdelRepository otdelRepository;
 
     public Otdel getOtdel(Long id) {
-        return otdelRepository.findById(id).get();
+        Otdel otdel = otdelRepository.findById(id).orElseThrow();
+        return otdel;
     }
-
 
     public Otdel createOtdel(Otdel create) {
         return otdelRepository.save(create);
@@ -42,24 +42,29 @@ public class OtdelService {
         otdelRepository.deleteById(id);
     }
 
+    public Otdel getByTitle(String title) {
+        return otdelRepository.findByTitle(title);
+    }
 
-    @Transactional
     public List<Otdel> listAllOtdels() {
         List<Otdel> list = new ArrayList<>();
         otdelRepository.findAll().forEach(list::add);
-        for (var otdel :
-                list) {
-            Hibernate.initialize(otdel.getEmployees());
-            otdel.getEmployees().forEach(e -> {
-                List<Employee> employees = otdel.getEmployees();
-                Hibernate.initialize(employees);
-                employees.forEach(employee -> {
-                    Hibernate.initialize(employee.getMail());
-                    Hibernate.initialize(employee.getPhone());
-                });
-            });
-        }
         return list;
+    }
+
+    public Otdel getOtdelByTitleAndDepantment(String title, Department department) {
+        return otdelRepository.findByTitleAndDepartment(title, department);
+    }
+
+    public List<Otdel> getOtdelsByFilter(OtdelFilter otdelFilter) {
+        var list = otdelRepository.findByFilter(otdelFilter);
+        list.sort(Comparator.comparing(Otdel::getId));
+        return list;
+    }
+
+    public Long count() {
+        Long count = otdelRepository.count();
+        return count;
     }
 
 }

@@ -1,12 +1,14 @@
 package marvint.GUI.Department;
 
+import lombok.SneakyThrows;
+import marvint.GUI.MainForm;
 import marvint.domain.Department;
+import marvint.domain.Position;
 import marvint.сontroller.DepartmentController;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
@@ -14,7 +16,7 @@ import java.util.List;
 
 @Component
 public class EditDepartmentt {
-    private JFrame frame;
+    private JInternalFrame frame;
     private JPanel panel1;
     private JLabel idLabel;
     private JLabel titleLabel;
@@ -23,7 +25,12 @@ public class EditDepartmentt {
     private JTextField idText;
     private JTextField textField1;
     private JTextField textField2;
+    private JTextField textField3;
+    private JButton findButton;
     private JComboBox comboBox1;
+
+    @Autowired
+    private MainForm mainForm;
 
     @Autowired
     DepartmentController departmentController;
@@ -32,46 +39,52 @@ public class EditDepartmentt {
     DepartmentForm departmentForm;
 
     public EditDepartmentt() {
-        Button.addActionListener(new ActionListener() {
+        findButton.addActionListener(new ActionListener() {
+            @SneakyThrows
             @Override
             public void actionPerformed(ActionEvent e) {
-                Department department = new Department();
-                department.setId(Long.parseLong(textField1.getText()));
-                department.setTitle(comboBox1.getSelectedItem().toString());
-                department.setAddress(textField2.getText());
-                departmentController.saveDepartment(department);
-               departmentForm.editTree();
-                frame.setVisible(false);
+                Department department = departmentController.getDepartmentById(Long.parseLong(idText.getText()));
+                textField2.setText(department.getAddress());
+                textField3.setText(department.getTitle());
             }
         });
-
-        comboBox1.addActionListener(new ActionListener() {
+        Button.addActionListener(new ActionListener() {
+            @SneakyThrows
             @Override
             public void actionPerformed(ActionEvent e) {
-                List<Department> list = departmentController.getDepartmentList();
-                int ibdex = comboBox1.getSelectedIndex();
-                Department department = list.get(ibdex);
-                textField1.setText(department.getId().toString());
-                textField2.setText(department.getAddress());
-
+                Department department = departmentController.getDepartmentById(Long.parseLong(idText.getText()));
+                department.setAddress(textField2.getText());
+                department.setTitle(textField3.getText());
+                departmentController.saveDepartment(department);
+                departmentForm.editTree();
+                frame.setVisible(false);
             }
         });
     }
 
+    public void setLabels(Department department) {
+        idText.setText(department.getId().toString());
+        idText.setEnabled(false);
+        findButton.setVisible(false);
+        textField2.setText(department.getAddress());
+        textField3.setText(department.getTitle());
+    }
+
+    public void defaultEdit() {
+        // TODO: 08.07.2020 delete
+        idText.setText("");
+        textField2.setText("");
+        textField3.setText("");
+        idText.setEnabled(true);
+        findButton.setVisible(true);
+    }
+
     public void initFrame() {
-        frame = new JFrame("AddEmployee");
+        frame = new JInternalFrame("Изменить департамент", true, true, true);
         frame.setContentPane(panel1);
         frame.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
-        List<Department> list = departmentController.getDepartmentList();
-        List<String> titles = new ArrayList<>();
-        for (int i=0; i<list.size();i++) {
-            Department department = list.get(i);
-            titles.add(department.getTitle());
-        }
-        comboBox1.setModel(new DefaultComboBoxModel(titles.toArray()));
         frame.pack();
-        frame.setSize(500, 500);
-        frame.setLocation(500, 100);
+        mainForm.pane.add(frame);
         frame.setVisible(true);
     }
 

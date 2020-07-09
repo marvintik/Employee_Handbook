@@ -10,14 +10,14 @@
     <changeSet id="create tables" author="marvint" runOnChange="true">
 
         <createTable tableName="position">
-            <column name="code" type="int8">
+            <column autoIncrement="true" name="code" type="BIGSERIAL">
                 <constraints primaryKey="true"/>
             </column>
             <column name="title" type="varchar(50)"/>
         </createTable>
 
         <createTable tableName="department">
-            <column name="id" type="int8">
+            <column autoIncrement="true" name="id" type="BIGSERIAL">
                 <constraints primaryKey="true"/>
             </column>
             <column name="title" type="varchar(50)"/>
@@ -25,7 +25,7 @@
         </createTable>
 
         <createTable tableName="otdel">
-            <column name="id" type="int8">
+            <column autoIncrement="true" name="id" type="BIGSERIAL">
                 <constraints primaryKey="true"/>
             </column>
             <column name="department_id" type="int8">
@@ -48,6 +48,10 @@
             <constraints referencedTableName="otdel" referencedColumnNames="id"
                          foreignKeyName="otdel_id_fk" nullable="false"/>
             </column>
+            <column name="department_id" type="int8">
+                <constraints referencedTableName="otdel" referencedColumnNames="id"
+                             foreignKeyName="department_id_fk" nullable="false"/>
+            </column>
             <column name="first_name" type="varchar(50)"/>
             <column name="last_name" type="varchar(50)"/>
             <column name="second_name" type="varchar(50)"/>
@@ -57,7 +61,7 @@
 
 
         <createTable tableName="mail">
-            <column name="id" type="int8">
+            <column autoIncrement="true" name="id" type="BIGSERIAL">
                 <constraints primaryKey="true"/>
             </column>
             <column name="employee_login" type="varchar(50)">
@@ -68,7 +72,7 @@
         </createTable>
 
         <createTable tableName="phone">
-            <column name="id" type="int8">
+            <column autoIncrement="true" name="id" type="BIGSERIAL">
                 <constraints primaryKey="true"/>
             </column>
             <column name="employee_login" type="varchar(50)">

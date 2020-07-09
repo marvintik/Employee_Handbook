@@ -1,17 +1,17 @@
 package marvint.service;
 
 import marvint.domain.Employee;
-import marvint.domain.Filter;
-import marvint.domain.Phone;
+import marvint.domain.EmployeeFilter;
+import marvint.domain.Position;
+import marvint.exceptions.EntityAlreadyExistException;
+import marvint.exceptions.EntityNotFoundException;
 import marvint.repository.EmployeeRepository;
-import marvint.repository.MailRepository;
-import marvint.repository.PhoneRepository;
-import org.hibernate.Hibernate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 @Service
@@ -21,42 +21,57 @@ public class EmployeeService {
     EmployeeRepository employeeRepository;
 
 
-    public Employee getEmployee(String login) {
-        return employeeRepository.findById(login).get();
+    public Employee getEmployee(String login) throws EntityNotFoundException {
+        if (employeeRepository.findById(login).isPresent()) {
+            return employeeRepository.findById(login).get();
+        } else throw new EntityNotFoundException(Employee.class, login);
     }
 
 
-    public Employee createEmployee(Employee create) {
-        return employeeRepository.save(create);
+    public Employee createEmployee(Employee create) throws EntityAlreadyExistException {
+        if (!employeeRepository.existsById(create.getLogin())) {
+            return employeeRepository.save(create);
+        } else throw new EntityAlreadyExistException(Employee.class, create.getLogin());
     }
 
-    public void saveEmployee(Employee employee) {
-        employeeRepository.save(employee);
+    public void updateEmployee(Employee employee) throws EntityNotFoundException {
+        if (employeeRepository.findById(employee.getLogin()).isPresent()) {
+            employeeRepository.save(employee);
+        } else throw new EntityNotFoundException(Employee.class, employee.getLogin());
     }
 
     public List<Employee> listAll() {
         List<Employee> list = new ArrayList<>();
         employeeRepository.findAll().forEach(list::add);
+        list.sort(Comparator.comparing(Employee::getLogin));
         return list;
     }
 
-    public void deleteEmployee(String login){
-        employeeRepository.deleteById(login);
+    public void deleteEmployee(String login) throws EntityNotFoundException {
+        if (employeeRepository.findById(login).isPresent()) {
+            employeeRepository.deleteById(login);
+        } else throw new EntityNotFoundException(Employee.class, login);
     }
 
-    public List<Employee> getEmployees(Filter filter){
-        return employeeRepository.findByFilter(filter);
+    public List<Employee> getEmployees(EmployeeFilter employeeFilter) {
+        var list = employeeRepository.findByFilter(employeeFilter);
+        list.sort(Comparator.comparing(Employee::getLogin));
+        return list;
     }
 
     @Transactional
     public List<Employee> listAllEmployees() {
         List<Employee> list = new ArrayList<>();
         employeeRepository.findAll().forEach(list::add);
-        for (var employee :
-                list) {
-            Hibernate.initialize(employee.getMail());
-            Hibernate.initialize(employee.getPhone());
-        }
+        list.sort(Comparator.comparing(Employee::getLogin));
         return list;
+    }
+
+    public List<Employee> listEmployeeByPosition(Position position) {
+        return employeeRepository.findEmployeeByPosition(position);
+    }
+    public Long count() {
+        Long count = employeeRepository.count();
+        return count;
     }
 }
